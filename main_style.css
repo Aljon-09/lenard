@@ -1,5 +1,4 @@
-/* START OF THE HEADER NAVIGATION 
-  MEOW WARNING WARNING DO NOT TOUCH */
+
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
   *{
     margin: 0;
@@ -139,71 +138,71 @@
 /* END OF THE HEADER NAVIGATION */
 /* START OF THE FOOTER NAVIGATION MEOW */
 .content {
-  flex: 1;
+flex: 1;
 }
 .footer {
-  position: bottom;
-  background-color: #000;
-  text-align: center;
-  padding: 20px 0;
-  color: #fff;
+position: bottom;
+background-color: #000;
+text-align: center;
+padding: 20px 0;
+color: #fff;
 }
 .footer .nav {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+display: flex;
+justify-content: center;
+list-style: none;
+padding: 0;
+margin: 0;
 }
 .footer .nav li {
-  margin: 0 15px;
+margin: 0 15px;
 }
 .footer .nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s;
 }
 .footer .nav a:hover {
-  color: red;
+color: red;
 }
 .footer .description {
-  margin: 20px 0;
-  font-size: 14px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+margin: 20px 0;
+font-size: 14px;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
 }
 .footer .social-icons {
-  margin: 20px 0;
+margin: 20px 0;
 }
 .footer .social-icons a {
-  color: #fff;
-  margin: 0 10px;
-  font-size: 20px;
-  text-decoration: none;
+color: #fff;
+margin: 0 10px;
+font-size: 20px;
+text-decoration: none;
 }
 .footer .social-icons a:hover {
-  color: red;
+color: red;
 }
 .footer .copyright {
-  background-color: #333;
-  padding: 10px 0;
-  font-size: 14px;
+background-color: #333;
+padding: 10px 0;
+font-size: 14px;
 }
-/* for the messy header and footer */
+
 #page-container {
-  position: relative;
-  min-height: 100vh;
+position: relative;
+min-height: 100vh;
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
+padding-bottom: 2.5rem;    
 }
 
 #footers {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;            /* Footer height */
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 2.5rem;          
 }

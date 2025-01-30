@@ -18,7 +18,7 @@
     border-radius: 10px;
     margin: 20px 0;
 }
-/*FEATURED CARS*/
+
 .featured-cars {
     text-align: center;
     margin-top: 40px;
@@ -112,7 +112,7 @@
     color: white;
 }
 
-/*FEATURED HIGHLIGHTS*/
+
 
 .container {
     max-width: 1200px;
@@ -284,7 +284,7 @@
     filter: brightness(90%);
 }
 
-/* Responsive Styles for Services Section */
+
 @media (max-width: 768px) {
     .content {
         flex-direction: column; 
@@ -341,7 +341,7 @@
 }
 
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
