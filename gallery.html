@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toyota.net.com/Gallery/</title>
+  <!-- DO NOT EDIT OR TOUCH THE LINKS >_< -->
+  <link rel="stylesheet" href="main_style.css">
+  <link rel="responsive-css-window" href="responsive-window.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel="stylesheet" href="gallery.css">
+  <!-- [PATI YUNG SCRIPT] MADE BY BUNBUNMEOW -->
+</head>
+<div id="grid-container"></div>
+<header>
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo"><a href="home.html">TOYOTA</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="1shop.html">Services</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="gallery.html">Models</a></li>
+            </ul>
+            <div class="icon menu-btn"><i class="fas fa-bars"></i></div>
+         </div>
+        </nav>
+      </div>
+  <!-- DO NOT TOUCH OR EDIT MEOW -->
+   <script>
+       const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = ()=>{
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      }
+      cancelBtn.onclick = ()=>{
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      }
+      window.onscroll = ()=>{
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+      }
+   </script>
+   <!-- DO NOT TOUCH OR EDIT MEOW -->
+<!--ALJON job to design the body of the gallery page-->
+<!--PS: kindly update the new header please, to avoid webpage crash-->
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+
+            <div class="GABBY">
+                <div class="Headers">
+                    <img alt="picture for the top" 
+   src="https://online.toyota.com.ph/medias/ViosBackdrop.jpg?context=bWFzdGVyfHJvb3R8MjA5NDkzfGltYWdlL2pwZWd8YUdGaEwyaGlZaTg0T0RBM056azVNamt4T1RNMEwxWnBiM05DWVdOclpISnZjQzVxY0djfGQ4M2FhODM3N2RiZGM5ZWE3Mzc2ZmUzNTE5YjQyNjBmZDEzMDZiNmNiZGQyNjkwNTlmNjIyZTU3NzkwMGM4Y2E"/>
+   <div class="title">
+    <h2>Toyota Vehicles</h2>
+   </div>
+  </div>
+
+  <div class="conTent">
+   <p>Here at Toyota, we offer a wide selection of vehicles suited for you. it's a sedan, an SUV, or a hatchback, our line of quality, durable, and reliable Toyota vehicles will address your needs and more!</p>
+  </div>
+
+  <div class="nAv-tabs">
+   <a href="1shop.html">Hatchbacks &amp; Sedans</a>
+   <a href="2shop.html">Crossovers &amp; SUVs</a>
+   <a href="3shop.html">MPVs</a>
+   <a href="4shop.html">Vans &amp; Pick-ups</a>
+   <a href="5shop.html">Electrified</a>
+   <a href="6shop.html">Gazoo Racing</a>
+  </div>
+  <div class="Section">
+   <h2>Hatchbacks &amp; Sedans</h2>
+   <p>Discover the versatility and functionality of our Sedan lineup, featuring 4 doors and a spacious trunk. Or, for even more convenience, opt for our Hatchback models with their added 5th door. Built for a comfortable driving experience, our line of Hatchbacks and Sedans provides you with a world-class driving experience.</p>
+   <div class="car-Images">
+    <img alt="Toyota WIGO" src="https://content.toyota.com.ph/uploads/prices/855/002_855_1732169571606_000.webp"/>
+    <img alt="Toyota VIOS" src="https://content.toyota.com.ph/uploads/prices/332/002_332_1732166676874_000.webp"/>
+    <img alt="Toyota CAMRY" src="https://content.toyota.com.ph/uploads/prices/701/002_701_1734072726294_000.webp"/>
+    <img alt="Toyota COROLLA ALTIS" src="https://content.toyota.com.ph/uploads/prices/789/002_789_1735861347058_000.webp"/>
+   </div>
+  </div>
+
+  <div class="Section">
+   <h2>Crossovers &amp; SUVs</h2>
+   <p>Don't let road bumps ruin your ride. With a durable and stylish vehicle, tackle any road with confidence and ease. From urban roads to off-roading, our vehicles are designed to provide smooth driving performance, passenger comfort, fun, and peace of mind.</p>
+   <div class="car-Images">
+    <img alt="Toyota RAIZE" src="https://content.toyota.com.ph/uploads/prices/713/002_713_1732181820284_000_320x145.webp"/><div class="car-name"></div>
+    <img alt="Toyota RAV4" src="https://content.toyota.com.ph/uploads/prices/727/002_727_1732182209905_000_320x145.webp"/><div class="car-name"></div>
+    <img alt="Toyota VELOZ" src="https://content.toyota.com.ph/uploads/prices/759/002_759_1732182702394_000_320x145.webp"/><div class="car-name"></div>
+    <img alt="Toyota RUSH" src="https://content.toyota.com.ph/uploads/prices/272/002_272_1732182956663_000_320x145.webp"/><div class="car-name"></div>
+   </div>
+  </div>
+
+  <div class="Section">
+    <div class="car-Images">
+    <img alt="Toyota FORTUNER" src="https://content.toyota.com.ph/uploads/prices/913/002_913_1733805355275_000_320x145.webp"/><div class="car-name"></div>
+    <img alt="Toyota COROLLA CROSS" src="https://content.toyota.com.ph/uploads/prices/784/002_784_1732184240610_000_320x145.webp"/><div class="car-name"></div>
+    <img alt="Toyota LAND CRUISER" src="https://content.toyota.com.ph/uploads/prices/687/002_687_1732184873443_000_320x145.webp"/><div class="car-name"></div>
+    <img alt="Toyota LAND CRUISER PRADO" src="https://content.toyota.com.ph/uploads/prices/687/002_687_1732184873443_000_320x145.webp"/><div class="car-name"></div>
+   </div>
+  </div>
+
+  <div class="Section">
+    <h2>MPVs</h2>
+    <p>In need of a vehicle that fits your “more”? An MPV is your best bet! Our proven line up of Toyota cars provides an excellent passenger experience that ensures your safety on the road. So you can take your family and important items everywhere in comfort.</p>
+    <div class="car-Images">
+     <img alt="Toyota ZENIX" src="https://content.toyota.com.ph/uploads/prices/839/002_839_1732170867256_000_320x145.webp"/><div class="car-name"></div>
+     <img alt="Toyota AVANZA" src="https://content.toyota.com.ph/uploads/prices/737/002_737_1732172331342_000_320x145.webp"/><div class="car-name"></div>
+     <img alt="Toyota INNOVA" src="https://content.toyota.com.ph/uploads/prices/897/002_897_1732173600579_000_320x145.webp"/><div class="car-name"></div>
+    </div>
+   </div>
+
+  <div class="Section">
+   <h2>Vans &amp; Pick-ups</h2>
+   <p>No matter the need, we’ve got you covered. Toyota offers a range of vans and pick-ups that gives you the freedom to move your cargo or passengers thanks to its increased capacity. 
+    Designed with safety and comfort in mind, you are guaranteed you get to your destination worry-free.</p>
+   <div class="car-Images">
+    <img alt="Toyota TAMARAW" src="https://content.toyota.com.ph/uploads/prices/917/002_917_1733392635169_000_320x145.webp"/>
+    <img alt="Toyota HIACE" src="https://content.toyota.com.ph/uploads/prices/651/002_651_1732270109424_000_320x145.webp"/>
+    <img alt="Toyota COMMUTER DELUXE" src="https://content.toyota.com.ph/uploads/prices/467/002_467_1732270333835_000_320x145.webp"/>
+    <img alt="Toyota SUPER GRANDIA" src="https://content.toyota.com.ph/uploads/prices/92/002_92_1732270502033_000_320x145.webp"/>
+    </div>
+  </div>
+
+  <div class="Section">
+  <div class="car-Images">
+    <img alt="Toyota GL GRANDIA" src="https://content.toyota.com.ph/uploads/prices/459/002_459_1732270747656_000_320x145.webp"/>
+    <img alt="Toyota GL GRANDIA TOURER" src="https://content.toyota.com.ph/uploads/prices/454/002_454_1732271163148_000_320x145.webp"/>
+    <img alt="Toyota ALPHARD" src="https://content.toyota.com.ph/uploads/prices/873/002_873_1732271307943_000_320x145.webp"/>
+    <img alt="Toyota LITE ACE" src="https://content.toyota.com.ph/uploads/prices/791/002_791_1732271507268_000_320x145.webp"/>
+    </div>
+    </div>
+
+    <div class="Section">
+      <div class="car-Images">
+    <img alt="Toyota COASTER" src="https://content.toyota.com.ph/uploads/prices/449/002_449_1732271751092_000_320x145.webp"/>
+    <img alt="Toyota HILUX" src="https://content.toyota.com.ph/uploads/prices/884/002_884_1732272281743_000_320x145.webp"/>
+    <img alt="Toyota HILUX FLEET" src="https://content.toyota.com.ph/uploads/prices/591/002_591_1732273134971_000_320x145.webp"/>
+   </div>
+  </div>
+  
+  <div class="Section">
+    <h2>Electrified</h2>
+    <p>If sustainability is important to you, our Hybrid Electric Vehicles (HEVs) offer that and more! In addition to reducing carbon emissions that are good for the environment, our widest range of HEVs gives you a satisfying drive with their responsive acceleration feature from its electric motor without any additional maintenance. Experience seamless performance from Toyota’s Hybrid Electric Vehicle technology.</p>
+    <div class="car-Images">
+     <img alt="Toyota ZENIX " src="https://content.toyota.com.ph/uploads/prices/839/002_839_1732170867256_000_320x145.webp"/><div class="car-name"></div>
+     <img alt="Toyota YARIS CROSS" src="https://content.toyota.com.ph/uploads/prices/863/002_863_1732181419331_000_320x145.webp"/><div class="car-name"></div>
+     <img alt="Toyota RAV4" src="https://content.toyota.com.ph/uploads/prices/727/002_727_1732182209905_000_320x145.webp"/><div class="car-name"></div>
+     <img alt="Toyota COROLLA ALTIS" src="https://content.toyota.com.ph/uploads/prices/789/002_789_1735861347058_000_320x145.webp"/><div class="car-name"></div>
+     <img alt="Toyota ALPHARD" src="https://content.toyota.com.ph/uploads/prices/873/002_873_1732271307943_000_320x145.webp"/><div class="car-name"></div>
+     <img alt="Toyota CORROLLA CROSS" src="https://content.toyota.com.ph/uploads/prices/784/002_784_1732184240610_000_320x145.webp"/><div class="car-name"></div>
+    </div>
+   </div>
+
+   <div class="Section">
+    <h2>Gazoo Racing</h2>
+    <p>Dominate any road with our Gazoo Racing vehicles. Our line of Specialty GR vehicles offers eye-catching style and incredible performance that will make you feel race-ready! Race your ambition with our extraordinary GR performance cars.​</p>
+    <div class="car-Images">
+     <img alt="Toyota " src="https://content.toyota.com.ph/uploads/prices/799/002_799_1732273457280_000_320x145.webp"/>
+     <img alt="Toyota " src="https://content.toyota.com.ph/uploads/prices/681/002_681_1732273753727_000_320x145.webp"/>
+     <img alt="Toyota " src="https://content.toyota.com.ph/uploads/prices/89/002_89_1732274749500_000_320x145.webp"/>
+     <img alt="Toyota " src="https://content.toyota.com.ph/uploads/prices/789/002_789_1735861347058_000_320x145.webp"/>
+    </div>
+   </div>
+
+            <!--meow ikaw na bahala reto meow -->
+</body>
+<br>
+<br>
+<footer id="footers">
+    <div class="footer">
+      <ul class="nav">
+          <li><a href="about_us.html">ABOUT US</a></li>
+          <li><a href="1shop.html">PRODUCTS</a></li>
+          <li><a href="gallery.html">MODELS</a></li>
+          <li><a href="contact_us.html">CONTACT</a></li>
+      </ul>
+      <div class="description">
+      </div>
+      <div class="social-icons">
+          <a href="https://www.facebook.com/ToyotaMotorPH/" 
+          target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/ToyotaMotorPH?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor&mx=2" 
+          target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/toyotamotorph/"
+          target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UC5rnxQeDpMnyCZD8KH7cZMA"
+          target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="copyright">
+          © 2025 Copyright: Toyota.net.com Designed by ALJON AI
+     </div>
+ </footer>
+</div>
+</div>
+</html>

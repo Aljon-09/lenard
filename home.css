@@ -1,0 +1,434 @@
+.p1 {
+    flex: auto;
+    text-align: center;
+    color: rgb(34, 31, 31);
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+.p2 {
+    flex: auto;
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+}
+.featured-section {
+    background-color: #f8f8f8; 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+/*FEATURED CARS*/
+.featured-cars {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.car-card a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.car-container {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.car-card {
+    margin: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    overflow: hidden; 
+}
+
+.car-card img {
+    width: 100%; 
+    height: auto; 
+}
+
+.explore-btn {
+    margin-top: 20px; 
+}
+
+.explore-btn a {
+    text-decoration: none; 
+    color: red; 
+}
+.car-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+}
+
+.car-card h3 {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.car-card p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.explore-btn {
+    margin-top: 20px;
+}
+
+.explore-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid red;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.explore-btn a:hover {
+    background: red;
+    color: white;
+}
+
+/*FEATURED HIGHLIGHTS*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.highlight {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: center; 
+}
+
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px; 
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+    padding: 0 10px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*FEATURED SERVICES*/
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 45%;
+}
+.service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    height: 200px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+.service-box:first-child {
+    background: red;
+    color: white;
+}
+.service-box:first-child:hover {
+    background: white;
+    color: red;
+}
+.service-box:hover {
+    background: red;
+    color: white;
+}
+.service-box::before {
+    content: attr(data-number);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1);
+}
+.installment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+.installment img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+.installment h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.installment p {
+    margin-bottom: 20px;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    max-width: 300px; 
+    height: 50px; 
+    background: white; 
+    color: red; 
+    padding: 15px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    border: 2px solid red; 
+    text-align: center; 
+    transition: background 0.3s ease, color 0.3s ease; 
+}
+.button:hover {
+    background: red; 
+    color: white; 
+}
+.installment img {
+    width: 100%; 
+    max-width: 600px; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease, filter 0.3s ease; /
+}
+
+.installment img:hover {
+    transform: scale(1.05); 
+    filter: brightness(90%);
+}
+
+/* Responsive Styles for Services Section */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .services {
+        width: 100%; 
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .service-box {
+        width: 100%; 
+        max-width: 300px; 
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .installment {
+        width: 100%; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .installment img {
+        max-width: 100%; 
+    }
+
+    .button {
+        width: 80%; 
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-box {
+        padding: 15px; 
+    }
+
+    .installment h2 {
+        font-size: 20px; 
+    }
+
+    .installment p {
+        font-size: 14px; 
+    }
+
+    .button {
+        padding: 10px; 
+    }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-list {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.show .menu-list {
+        display: flex; 
+    }
+
+    .menu-btn {
+        display: block; 
+    }
+
+    .cancel-btn {
+        display: block; 
+    }
+
+    .content {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .services {
+        grid-template-columns: 1fr; 
+        width: 100%; 
+    }
+
+    .service-box {
+        padding: 20px; 
+        height: auto; 
+    }
+
+    .installment {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .installment img {
+        max-width: 100%; 
+    }
+
+    .car-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .car-card {
+        width: 90%; 
+        margin: 10px 0; 
+    }
+
+    .explore-btn a {
+        width: 100%; 
+        padding: 15px; 
+    }
+
+    .highlight {
+        flex-direction: column; 
+    }
+
+    .card {
+        width: 90%; 
+        margin: 10px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .p1, .p2 {
+        font-size: 30px; 
+    }
+
+    .card h3, .car-card h3 {
+        font-size: 16px; 
+    }
+
+    .card p, .car-card p {
+        font-size: 12px;
+    }
+
+    .button {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service/MPVs</title>
+    <link rel="stylesheet" href="/main_style.css">
+    <link rel="stylesheet-for-ABOUT US " href="shop.css">
+    <link rel="responsive-css-window" href="/responsive-window.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<div id="grid-container">
+    <header>
+      <nav class="navbar">
+        <div class="content">
+          <div class="logo"><a href="home.html">TOYOTA</a></div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="1shop.html">Services</a></li>
+              <li><a href="contact_us.html">Contact Us</a></li>
+              <li><a href="gallery.html">Models</a></li>
+              </ul>
+              <div class="icon menu-btn"><i class="fas fa-bars"></i></div>
+           </div>
+          </nav>
+        </div>
+    <!-- DO NOT TOUCH OR EDIT MEOW -->
+     <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") :
+           navbar.classList.remove("sticky");
+        }
+        </script>
+    </header>
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+                    <div class="LOOB">
+                        <html>
+ <head>
+  <title>
+   New Vehicles
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   .LOOB {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .HEADER {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .HEADER img {
+            width: 100%;
+            height: auto;
+        }
+        .HEADER h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+        }
+        .NAV {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
+        }
+        .NAV a {
+            margin: 5px 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .NAV a:hover{
+            background-color: red;
+            color: white;
+        }
+        .NAV .active {
+            background-color: red;
+            color:white;
+        }
+        .CONTENT {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px 0;
+            background-color: white;
+            flex-wrap: wrap;
+        }
+        .CONTENT .car {
+            text-align: center;
+            transition: transform 0.3s;
+            margin: 20px;
+        }
+        .CONTENT .car:hover {
+            transform: scale(1.05);
+        }
+        .CONTENT .car img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            transition: transform 0.3s;
+        }
+        .CONTENT .car img:hover {
+            transform: scale(1.1);
+        }
+        .CONTENT .car h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .CONTENT .car p {
+            color: red;
+            margin: 5px 0;
+        }
+        .CONTENT .car .button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .CONTENT .car .button:hover {
+            background-color: red;
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .HEADER h1 {
+                font-size: 2em;
+            }
+            .NAV a {
+                padding: 5px 10px;
+                font-size: 0.9em;
+            }
+            .CONTENT {
+                flex-direction: column;
+                padding: 20px 0;
+            }
+            .CONTENT .car {
+                margin-bottom: 30px;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="HEADER">
+   <img alt="Header image with a red car and text 'New Vehicles'" 
+   src="https://content.toyota.com.ph/uploads/pages/1/006_1_1624513121536_000.webp"/>
+   <h1>
+    New Vehicles
+   </h1>
+  </div>
+  <div class="NAV">
+   <a href="1shop.html">Hatchbacks &amp; Sedans</a>
+   <a href="2shop.html">Crossovers &amp; SUVs</a>
+   <a class="active" href="3shop.html">MPVs</a>
+   <a href="4shop.html">Vans &amp; Pick-ups</a>
+   <a href="5shop.html">Electrified</a>
+   <a href="6shop.html">Gazoo Racing</a>
+  </div>
+
+  <div class="CONTENT">
+   <div class="car">
+    <img src="https://online.toyota.com.ph/medias/F654LMGQSFF003-F654LMGQSFF003-3Q3-bb2f34-Dark-Red-Mica-Metallic.png-1626745310342-TMP-2890Wx1690H?context=bWFzdGVyfHJvb3R8MTQ1NjEyMXxpbWFnZS9wbmd8YURBMUwyaGxOaTg0T0RBeE16ZzNPVE0zT0RJeUwwWTJOVFJNVFVkUlUwWkdNREF6WDBZMk5UUk1UVWRSVTBaR01EQXpYek5STXkwalltSXlaak0wWDBSaGNtc2dVbVZrSUUxcFkyRWdUV1YwWVd4c2FXTXVjRzVuWHpFMk1qWTNORFV6TVRBek5ESmZWRTFRTFRJNE9UQlhlREUyT1RCSXw5ZTg0Njg5MjQxOWEzZjUxMDhmMDM1MmM2OWEwZGE2OWM3YzZhYmY5OWI4ZTVmZTE4OTAzNWY1M2E0ODFlZWRj">
+    <h2>Avanza</h2>
+    <p>Virtual showroom</p>
+    <br>
+    <a href="https://online.toyota.com.ph/Diesel/MPV/AVANZA/VT03Avanza-1-5-G-AT-VELO/p/F654LMGQSFF003" class="button">BUY NOW</a>
+   </div>
+
+   <div class="car">
+    <img src="https://online.toyota.com.ph/medias/GUN143LMMTHYM015-GUN143LMMTHYM015-3R0-5d313a-V-Blackish-Red-Mica.1.png-1626753669015-TMP-2890Wx1690H?context=bWFzdGVyfHJvb3R8MzA0OTE3NXxpbWFnZS9wbmd8YUdJd0wyZzNOQzg0T0RBeU9EUTNPRGd6TWprMEwwZFZUakUwTTB4TlRWUklXVTB3TVRWZlIxVk9NVFF6VEUxTlZFaFpUVEF4TlY4elVqQXRJelZrTXpFellWOVdYMEpzWVdOcmFYTm9JRkpsWkNCTmFXTmhMakV1Y0c1blh6RTJNalkzTlRNMk5qa3dNVFZmVkUxUUxUSTRPVEJYZURFMk9UQkl8YjBlOThmZGMzZTAyYjE3YWUyNzcwYzYwM2M4MzE0OGNjZGZhNzQxNDJjMDIwOWI4ZjMyMDg0MWU5NzFhYmNiNA"/>
+    <h2>Innova</h2>
+    <p>Virtual showroom</p>
+    <br>
+    <a href="https://online.toyota.com.ph/Diesel/MPV/INNOVA/VT17Innova-V-DSL-AT/p/GUN143LMMTHYM015" class="button">BUY NOW</a>
+</div>
+  </div>
+</div>
+    </body>
+        <!--FOOTER-->
+            <footer id="footers">
+                <div class="footer">
+                    <ul class="nav">
+                        <li><a href="about_us.html">ABOUT US</a></li>
+                        <li><a href="1shop.html">PRODUCTS</a></li>
+                        <li><a href="gallery.html">MODELS</a></li>
+                        <li><a href="contact_us.html">CONTACT</a></li>
+                    </ul>
+                    <div class="description"></div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ToyotaMotorPH/" 
+                           target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/ToyotaMotorPH?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor&mx=2" 
+                           target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/toyotamotorph/"
+                           target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UC5rnxQeDpMnyCZD8KH7cZMA"
+                           target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="copyright">
+                        © 2025 Copyright: Toyota.net.com Designed by ALJON AI
+                    </div>
+                </div>
+            </footer>
+            </div>
+        </div>
+</html>

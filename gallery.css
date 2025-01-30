@@ -1,0 +1,126 @@
+.GABBY {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.Headers {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.Headers img {
+    width: 100%;
+    height: auto;
+}
+.Headers .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+.Headers .title h2 {
+    color: white;
+    margin: 0;
+}
+.conTent {
+    text-align: center;
+    padding: 20px;
+}
+.conTent p {
+    color: #333;
+    font-size: 18px;
+}
+.nAv-tabs {
+    display: flex;
+    justify-content: center;
+    background: #f8f8f8;
+    padding: 10px 0;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.nAv-tabs a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 0 10px;
+    border-bottom: 3px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+.nAv-tabs a.active {
+    color: #e4002b;
+    border-bottom: 3px solid #e4002b;
+}
+.nAv-tabs a:hover {
+    color: #e4002b;
+    border-bottom: 3px solid #e4002b;
+}
+.Section {
+    text-align: center;
+    padding: 20px;
+}
+.Section h2 {
+    color: #333;
+    font-size: 24px;
+}
+.Section p {
+    color: #666;
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+.car-Images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.car-Images img {
+    margin: 10px;
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.car-Images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.car-Images .car-name{
+    margin-top:5px;
+    font-size:  14px;
+    color:black;
+}
+@media (max-width: 768px) {
+    .nAv-tabs {
+        flex-direction: column;
+    }
+    .nAv-tabs a {
+        margin: 5px 0;
+    }
+    .car-Images {
+        flex-direction: column;
+    }
+    .Section p {
+        font-size: 14px;
+    }
+    .Section h2 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .Headers .title {
+        padding: 5px 10px;
+    }
+    .Headers .title h1 {
+        font-size: 18px;
+    }
+    .Content p {
+        font-size: 16px;
+    }
+    .nAv-tabs a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .car-Images img {
+        max-width: 150px;
+    }
+}
