@@ -1,1 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toyota.net.com/Homepage/</title>
+  <!-- DO NOT EDIT OR TOUCH THE LINKS >_< -->
+  <link rel="stylesheet" href="main_style.css">
+  <link rel="responsive-css-window" href="responsive-window.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel="stylesheet" href="home.css">
+  <!-- [PATI YUNG SCRIPT] MADE BY BUNBUNMEOW -->
+</head>
+<div id="grid-container">
+<header>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="index.html">TOYOTA</a></div>
+    <ul class="menu-list">
+      <div class="icon cancel-btn">
+        <i class="fas fa-times"></i>
+      </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="shop.html">Services</a></li>
+          <li><a href="contact_us.html">Contact</a></li>
+          <li><a href="gallery.html">Models</a></li>
+          </ul>
+          <div class="icon menu-btn"><i class="fas fa-bars"></i></div>
+       </div>
+      </nav>
+    </div>
+<!-- DO NOT TOUCH OR EDIT MEOW -->
+ <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") :
+       navbar.classList.remove("sticky");
+    }
+ </script>
+ <!-- DO NOT TOUCH OR EDIT MEOW -->
+</header>
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+  <!--example-->
+  <!--Carousel HDIUFSFPLDK-->
+  <div class="carousel-inner">
+    <div class="item active">
+        <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/469358188_1005741248259458_4598772334480793740_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=qV6VDOQACEEQ7kNvgH6fFk7&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=ACfLdIMF46_rpK4rFpnHBxv&oh=00_AYDn1HQsQeEx4PZa13rbM7ddP9Rl5vCkIZPQWwK-saES7g&oe=679E685D" alt="Event 1" width="100%">
+    </div>
+            <!-- Featured Highlights -->
+            <section class="highlight featured-section">
+                <div class="highlight-title">
+                    <h2><span class="p1">Featured</span> <span class="p2">Highlights</span></h2>
+                </div>
+            </section>
 
+            <div class="container">
+                <div class="highlight">
+                    <div class="card">
+                        
+                        <a href="https://toyota.com.ph/startyourimpossible" class="read-more">
+                            <img src="https://content.toyota.com.ph/uploads/articles/640/003_640_1721400537361_000387X212.webp" alt="Athletes">
+                            <h3>START YOUR IMPOSSIBLE</h3>
+                            <p>When you are free to move, anything is possible.</p>
+                            <br> 
+                            READ MORE
+                        </a>
+                    </div>
+                    <div class="card">
+                        
+                        <a href="https://toyota.com.ph/sustainability" class="read-more">
+                            <img src="https://content.toyota.com.ph/uploads/articles/628/003_628_1718695556249_000387X212.webp" alt="Electric Car Charging">
+                            <h3>PREPARING FOR AN ELECTRIFYING FUTURE</h3>
+                            <p>The push for carbon neutrality is a matter of urgency if cars are to remain a necessary part of society.</p>
+                            <br> 
+                            READ MORE
+                        </a>
+                    </div>
+                    <div class="card">
+                        
+                        <a href="https://toyota.com.ph/next-generation-tamaraw" class="read-more">
+                            <img src="https://content.toyota.com.ph/uploads/articles/644/003_644_1722472605999_000387X212.webp" alt="Next Generation Tamaraw">
+                            <h3>Next Generation Tamaraw</h3>
+                            <p>Tunay na palaban, subok na pangmatagalan, at bagay sa'yong kabuhayan.</p>
+                            <br>
+                            READ MORE
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Cars -->
+            <section class="highlight featured-section">
+                <div class="highlight-title">
+                    <h2><span class="p1">Featured</span> <span class="p2">Cars</span></h2>
+                </div>
+            </section>
+
+            <section class="featured-cars">
+                <div class="car-container">
+                    <div class="car-card">
+                        <a href="gallery.html">
+                            <img src="https://content.toyota.com.ph/uploads/vehicles/27/001_27_1737619404133_000330X240.webp" alt="Corolla Cross">
+                            <h3>COROLLA CROSS</h3>
+                            <p>Crossovers & SUVs</p>
+                        </a>
+                    </div>
+                    <div class="car-card">
+                        <a href="gallery.html">
+                            <img src="https://content.toyota.com.ph/uploads/vehicles/28/001_28_1721898551446_000330X240.webp" alt="Hilux">
+                            <h3>HILUX</h3>
+                            <p>Vans & Pick-ups</p>
+                        </a>
+                    </div>
+                    <div class="car-card">
+                        <a href="gallery.html">
+                            <img src="https://content.toyota.com.ph/uploads/vehicles/44/001_44_1727699254762_000330X240.webp" alt="Veloz">
+                            <h3>VELOZ</h3>
+                            <p>Crossovers & SUVs</p>
+                        </a>
+                    </div>
+                    <div class="car-card">
+                        <a href="gallery.html">
+                            <img src="https://content.toyota.com.ph/uploads/vehicles/52/001_52_1716368014282_000330X240.webp" alt="Yaris Cross">
+                            <h3>YARIS CROSS</h3>
+                            <p>Crossovers & SUVs</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="explore-btn">
+                    <a href="1shop.html">Explore vehicles</a>
+                </div>
+            </section>
+
+            <!-- Featured Services -->
+            <section class="highlight featured-section">
+                <div class="highlight-title">
+                    <h2><span class="p1">Featured</span> <span class="p2">Services</span></h2>
+                </div>
+            </section>
+
+            <div class="container">
+                <div class="content">
+                    <div class="services">
+                        <a href="https://toyota.com.ph/express-maintenance" class="service-box" data-number="01">
+                            <span>Toyota Express Maintenance</span>
+                            <small>Fast and efficient service.</small>
+                        </a>
+                        <a href="https://toyota.com.ph/express-maintenance#air-care" class="service-box" data-number="02">
+                            <span>Toyota Air Care</span>
+                            <small>Ensure clean air inside your vehicle with our air care service.</small>
+                        </a>
+                        <a href="https://toyota.com.ph/express-maintenance#smile" class="service-box" data-number="03">
+                            <span>Toyota Smile</span>
+                            <small>Exclusive customer care and perks for Toyota owners.</small>
+                        </a>
+                        <a href="https://toyota.com.ph/t-sure" class="service-box" data-number="04">
+                            <span>T-Sure</span>
+                            <small>Trusted pre-owned vehicles with Toyota's quality assurance.</small>
+                        </a>
+                    </div>
+                    <div class="installment">
+                        <img src="https://content.toyota.com.ph/uploads/articles/556/003_556_1699344515611_000_711x303.webp" alt="Installment">
+                        <h2>0% INSTALLMENT</h2>
+                        <p>Enjoy 0% Installment up to 6 months* using your Toyota Mastercard or other Metrobank Credit Card when you avail of General Repair or Body & Paint services at any Authorized Toyota Dealer nationwide.</p>
+                        <a href="shop.html" class="button">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+  <!--example pwede burahin at ibahin-->
+</body>
+<footer id="footers">
+  <div class="footer">
+    <ul class="nav">
+        <li><a href="about-us.html">ABOUT US</a></li>
+        <li><a href="1shop.html">PRODUCTS</a></li>
+        <li><a href="gallery.html">MODELS</a></li>
+        <li><a href="contact_us.html">CONTACT</a></li>
+    </ul>
+    <div class="description"></div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/ToyotaMotorPH/" 
+        target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/ToyotaMotorPH?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor&mx=2" 
+        target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/toyotamotorph/"
+        target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UC5rnxQeDpMnyCZD8KH7cZMA"
+        target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="copyright">
+        © 2025 Copyright: Toyota.net.com Designed by ALJON AI
+    </div>
+</div>
+</footer>
+</div>
+</div>
+</html>
